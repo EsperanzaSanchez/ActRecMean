@@ -1,13 +1,13 @@
 # Activity Recognition Mean - Code Book
 ## Data Dictionary
-Activity_Name : Name of physical human activity
+Activity_Name : Name of physical human activity   
 LAYING
 SITTING
 STANDING
 WALKING
 WALKING_DOWNSTAIRS
 WALKING_UPSTAIRS
-Subject_ID : Volunteer identification number.  values between: 1..30
+Subject_ID : Volunteer identification number.  values between:   1..30
 tBodyAcc.mean...X : Mean of tBodyAcc.mean...X  - Measurment of Human Activity Recognition using Smartphones experiment. values between:  0.22159824394..0.3014610196
 tBodyAcc.mean...Y : Mean of tBodyAcc.mean...Y  - Measurment of Human Activity Recognition using Smartphones experiment. values between:  -0.0405139534294..-0.00130828765170213
 tBodyAcc.mean...Z : Mean of tBodyAcc.mean...Z  - Measurment of Human Activity Recognition using Smartphones experiment. values between:  -0.152513899520833..-0.07537846886
