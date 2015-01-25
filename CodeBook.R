@@ -15,13 +15,14 @@ write.table("# Activity Recognition Mean - Code Book",
 write.table("## Data Dictionary", "CodeBook.md",eol = "\n", row.names = F,col.names = F, append =T,quote=F)
 
 ## 3. Writes Activity_Name and Subject_Id features
-tmp <- paste(names(rec[1]),": Name of physical human activity", sep =" ")
+tmp <- paste(names(rec[1]),": Name of physical human activity", "  ",  sep =" ")
 write.table(tmp, "CodeBook.md",eol = "\n", row.names = F,col.names = F, append =T,quote=F)
-write.table(levels(rec[,1]), "CodeBook.md",eol = "\n", row.names = F,col.names = F, append =T,quote=F)
+tmp <- paste(levels(rec[,1]), "  ")
+write.table(tmp, "CodeBook.md",eol = "\n", row.names = F,col.names = F, append =T,quote=F)
 ab <- min(rec[,2])
 ac <- max(rec[,2])
 cd <- paste(ab,ac,sep="..")
-tmp <- paste(names(rec[2]),": Volunteer identification number.  values between:", cd, sep =" ")
+tmp <- paste(names(rec[2]),": Volunteer identification number.  values between:", cd, "  ", sep =" ")
 write.table(tmp, "CodeBook.md",eol = "\n", row.names = F,col.names = F, append =T,quote=F)
 ab <- apply(rec[3:81],2,min)
 ac <- apply(rec[3:81],2,max)
@@ -29,8 +30,8 @@ cd <- paste(ab,ac,sep="..")
 ## 4. Writes Mean Variables features
 
 tmp <- paste(names(rec[3:81]),": Mean of", names(rec[3:81]), 
-             " - Measurment of Human Activity Recognition using Smartphones experiment. values between: ", 
-             cd, sep =" ")
+             " - Measurment of Human Activity Recognition using Smartphones experiment.","  ", "values between:", 
+             cd,"  ", sep =" ")
 write.table(tmp, "CodeBook.md",eol = "\n", row.names = F,col.names = F, append =T,quote=F)
 
 ## 5. Writes Study Design references
